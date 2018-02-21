@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<header>
+		<title>Projeto GynSoft Chamados</title>
+	</header>
+	<body>
+		<center>
+			<p>Fornecedores Cadastrados</p>
+			{% for item in supplier_list %}
+				<li>
+					<b>Nome:</b> {{ item.name }} - <b>Telefone:</b> {{ item.phone }}
+				</li>
+			{% endfor %}
+		</center>
+	</body>
+
+</html>
